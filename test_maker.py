@@ -90,9 +90,9 @@ def test_maker(fileName, debug = False):
         for var in correct_vars.keys():
             prompt = prompt.replace(f'`{var}`', str(correct_vars[var]))
 
-        # if debug:
-        #     print(FORMULA)
-        #     print(temp_vars)
+        if debug:
+            print('debug:',FORMULA)
+            print('debug:',temp_vars)
 
 
         print(prompt)
