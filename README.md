@@ -10,4 +10,4 @@ Variable mininum-value maximum-value <br>
 ... <br>
 Formula
 
-The function will generate a correct answer choice and similar randomly generated answer choices. It will output the inputted questions formatted to fit the correct answer, followed by four answer choices. An answer key with the correct answers for each question will be outputted after all the questions.
+The function will generate a correct answer choice and similar randomly generated answer choices. It will output the inputted questions formatted to fit the correct answer, followed by four answer choices. All decimal answers will be rounded to 2 decimal places. An answer key with the correct answers for each question will be outputted after all the questions.
