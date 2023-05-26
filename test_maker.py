@@ -32,7 +32,6 @@ def test_maker(fileName, debug = False):
                 if type(vars[j][0]) == int:
                     temp_vars[j] = randint(vars[j][0],vars[j][1])
                 else:
-                    #!ROUND
                     temp_vars[j] = format(uniform(vars[j][0],vars[j][1]),'.2g')
                     decimal = True
 
@@ -54,7 +53,7 @@ def test_maker(fileName, debug = False):
                         correct_ans = format(correct_ans,'.2g')
                 elif correct_ans >= 100000:
                     correct_ans = format(correct_ans,'.2e')
-                i+=1
+                i += 1
             else:
                 
                 for var in temp_vars.keys():
@@ -104,7 +103,7 @@ def test_maker(fileName, debug = False):
 
     print('Answer Key:')
     for i, v in enumerate(answer_key):
-        print(f'{"Q"+str(i+1):{len(str(len(answer_key)))+1}}: {v}')
+        print(f'{"Q"+{i+1}:{len(str(len(answer_key)))+1}}: {v}')
 
-
+#example
 test_maker("test_maker.txt")
