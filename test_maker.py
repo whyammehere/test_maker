@@ -103,7 +103,7 @@ def test_maker(fileName, debug = False):
 
     print('Answer Key:')
     for i, v in enumerate(answer_key):
-        print(f'{"Q"+{i+1}:{len(str(len(answer_key)))+1}}: {v}')
+        print(f'{"Q"+str(i+1):{len(str(len(answer_key)))+1}}: {v}')
 
 #example
 test_maker("test_maker.txt")
